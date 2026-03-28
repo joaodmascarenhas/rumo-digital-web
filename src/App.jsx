@@ -249,6 +249,72 @@ export default function App() {
         </div>
       </section>
 
+      <section className="bg-slate-50">
+  <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+    <div className="max-w-2xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+        Perguntas frequentes
+      </p>
+      <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+        Será que isto faz sentido para o meu negócio?
+      </h2>
+    </div>
+
+    <div className="mt-12 space-y-8">
+      <div>
+        <h3 className="text-lg font-semibold text-slate-900">
+          “O meu negócio é pequeno. Isto faz sentido para mim?”
+        </h3>
+        <p className="mt-2 text-slate-600 leading-7">
+          Faz. Na maioria dos casos, são precisamente os negócios mais pequenos quem mais beneficia de uma melhor organização.
+          Pequenas melhorias no dia a dia podem ajudar a poupar tempo e tornar o negócio mais organizado e fácil de gerir.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-lg font-semibold text-slate-900">
+          “Já trabalho assim há anos. Vale a pena mudar?”
+        </h3>
+        <p className="mt-2 text-slate-600 leading-7">
+          Se o negócio está a funcionar bem, não há necessidade de mudar.
+          Mas quando começam a surgir dificuldades no dia a dia, perda de tempo ou falta de organização,
+          é sinal de que existe espaço para melhorar.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-lg font-semibold text-slate-900">
+          “Não percebo nada de tecnologia.”
+        </h3>
+        <p className="mt-2 text-slate-600 leading-7">
+          Não precisa de perceber de tecnologia.
+          O objetivo é simplificar o dia a dia, não complicar. Tudo é pensado para ser simples e fácil de usar.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-lg font-semibold text-slate-900">
+          “Isto vai obrigar-me a mudar tudo?”
+        </h3>
+        <p className="mt-2 text-slate-600 leading-7">
+          Não. As melhorias são feitas de forma gradual e ajustadas ao que já existe.
+          O objetivo é melhorar o que faz sentido, sem criar complicações no dia a dia.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-lg font-semibold text-slate-900">
+          “Quanto é que isto custa?”
+        </h3>
+        <p className="mt-2 text-slate-600 leading-7">
+          Depende do que for necessário melhorar.
+          A primeira conversa serve para perceber o negócio e ver o que faz sentido, de forma simples e ajustada a cada caso.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
       <section id="contactos" className="bg-slate-950 text-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-2 lg:px-8">
           <div>
