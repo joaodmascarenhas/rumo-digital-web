@@ -86,7 +86,7 @@ export default function App() {
         </div>
       </header>
 
-      <section id="inicio" className="bg-slate-950 text-white">
+      <section id="inicio" className="scroll-mt-24 bg-slate-950 text-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
           <div className="flex flex-col justify-center">
             <div className="mb-6 inline-flex w-fit rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-slate-200">
@@ -144,7 +144,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="servicos" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <section id="servicos" className="scroll-mt-24 mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
             Serviços
@@ -173,7 +173,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="como-trabalhamos" className="bg-slate-50">
+      <section id="como-trabalhamos" className="scroll-mt-24 bg-slate-50">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
@@ -203,7 +203,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="sobre" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <section id="sobre" className="scroll-mt-24 mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
@@ -251,7 +251,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="perguntas-frequentes" className="bg-slate-50">
+      <section id="perguntas-frequentes" className="scroll-mt-24 bg-slate-50">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
@@ -318,7 +318,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="contactos" className="bg-slate-950 text-white">
+      <section id="contactos" className="scroll-mt-24 bg-slate-950 text-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-2 lg:px-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
