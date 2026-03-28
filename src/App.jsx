@@ -77,7 +77,8 @@ export default function App() {
               Sobre
             </a>
             <a href="#perguntas-frequentes" className="transition hover:text-slate-900">
-              FAQ</a>
+              FAQ
+            </a>
             <a href="#contactos" className="transition hover:text-slate-900">
               Contactos
             </a>
@@ -152,7 +153,8 @@ export default function App() {
             O que fazemos
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            Apoiamos pequenos negócios com soluções práticas para organizar melhor a operação e melhorar processos.
+            Apoiamos pequenos negócios com soluções práticas para organizar melhor a operação e
+            melhorar processos.
             <br />
             Criamos uma base de trabalho mais clara, eficiente e com maior controlo no dia a dia.
           </p>
@@ -222,12 +224,10 @@ export default function App() {
                 em estruturar, simplificar e melhorar o que realmente impacta a operação.
               </p>
               <p>
-                Acreditamos numa abordagem prática, à medida de cada cliente e sem complexidade desnecessária,
-                sempre orientada para utilidade real e melhoria sustentada.
+                Acreditamos numa abordagem prática, à medida de cada cliente e sem complexidade
+                desnecessária, sempre orientada para utilidade real e melhoria sustentada.
               </p>
-              <p className="font-semibold text-slate-900">
-                Não complicamos. Organizamos.
-               </p> 
+              <p className="font-semibold text-slate-900">Não complicamos. Organizamos.</p>
             </div>
           </div>
 
@@ -251,71 +251,72 @@ export default function App() {
         </div>
       </section>
 
-      <section className="bg-slate-50">
-  <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-    <div className="max-w-2xl">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-        Perguntas frequentes
-      </p>
-      <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-        Será que isto faz sentido para o meu negócio?
-      </h2>
-    </div>
+      <section id="perguntas-frequentes" className="bg-slate-50">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+              Perguntas frequentes
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+              Será que isto faz sentido para o meu negócio?
+            </h2>
+          </div>
 
-    <div className="mt-12 space-y-8">
-      <div>
-        <h3 className="text-lg font-semibold text-slate-900">
-          “O meu negócio é pequeno. Isto faz sentido para mim?”
-        </h3>
-        <p className="mt-2 text-slate-600 leading-7">
-          Faz. Na maioria dos casos, são precisamente os negócios mais pequenos quem mais beneficia de uma melhor organização.
-          Pequenas melhorias no dia a dia podem ajudar a poupar tempo e tornar o negócio mais organizado e fácil de gerir.
-        </p>
-      </div>
+          <div className="mt-12 space-y-8">
+            <div>
+              <h3 className="text-lg font-semibold text-slate-900">
+                “O meu negócio é pequeno. Isto faz sentido para mim?”
+              </h3>
+              <p className="mt-2 leading-7 text-slate-600">
+                Faz. Na maioria dos casos, são precisamente os negócios mais pequenos que mais
+                beneficiam de uma melhor organização. Pequenas melhorias no dia a dia podem ajudar
+                a poupar tempo e tornar o negócio mais organizado e fácil de gerir.
+              </p>
+            </div>
 
-      <div>
-        <h3 className="text-lg font-semibold text-slate-900">
-          “Já trabalho assim há anos. Vale a pena mudar?”
-        </h3>
-        <p className="mt-2 text-slate-600 leading-7">
-          Se o negócio está a funcionar bem, não há necessidade de mudar.
-          Mas quando começam a surgir dificuldades no dia a dia, perda de tempo ou falta de organização,
-          é sinal de que existe espaço para melhorar.
-        </p>
-      </div>
+            <div>
+              <h3 className="text-lg font-semibold text-slate-900">
+                “Já trabalho assim há anos. Vale a pena mudar?”
+              </h3>
+              <p className="mt-2 leading-7 text-slate-600">
+                Se o negócio está a funcionar bem, não há necessidade de mudar. Mas quando começam
+                a surgir dificuldades no dia a dia, perda de tempo ou falta de organização, é sinal
+                de que existe espaço para melhorar.
+              </p>
+            </div>
 
-      <div>
-        <h3 className="text-lg font-semibold text-slate-900">
-          “Não percebo nada de tecnologia.”
-        </h3>
-        <p className="mt-2 text-slate-600 leading-7">
-          Não precisa de perceber de tecnologia.
-          O objetivo é simplificar o dia a dia, não complicar. Tudo é pensado para ser simples e fácil de usar.
-        </p>
-      </div>
+            <div>
+              <h3 className="text-lg font-semibold text-slate-900">
+                “Não percebo nada de tecnologia.”
+              </h3>
+              <p className="mt-2 leading-7 text-slate-600">
+                Não precisa de perceber de tecnologia. O objetivo é simplificar o dia a dia, não
+                complicar. Tudo é pensado para ser simples e fácil de usar.
+              </p>
+            </div>
 
-      <div>
-        <h3 className="text-lg font-semibold text-slate-900">
-          “Isto vai obrigar-me a mudar tudo?”
-        </h3>
-        <p className="mt-2 text-slate-600 leading-7">
-          Não. As melhorias são feitas de forma gradual e ajustadas ao que já existe.
-          O objetivo é melhorar o que faz sentido, sem criar complicações no dia a dia.
-        </p>
-      </div>
+            <div>
+              <h3 className="text-lg font-semibold text-slate-900">
+                “Isto vai obrigar-me a mudar tudo?”
+              </h3>
+              <p className="mt-2 leading-7 text-slate-600">
+                Não. As melhorias são feitas de forma gradual e ajustadas ao que já existe. O
+                objetivo é melhorar o que faz sentido, sem criar complicações no dia a dia.
+              </p>
+            </div>
 
-      <div>
-        <h3 className="text-lg font-semibold text-slate-900">
-          “Quanto é que isto custa?”
-        </h3>
-        <p className="mt-2 text-slate-600 leading-7">
-          Depende do que for necessário melhorar.
-          A primeira conversa serve para perceber o negócio e ver o que faz sentido, de forma simples e ajustada a cada caso.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+            <div>
+              <h3 className="text-lg font-semibold text-slate-900">
+                “Quanto é que isto custa?”
+              </h3>
+              <p className="mt-2 leading-7 text-slate-600">
+                Depende do que for necessário melhorar. A primeira conversa serve para perceber o
+                negócio e ver o que faz sentido, de forma simples e ajustada a cada caso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="contactos" className="bg-slate-950 text-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-2 lg:px-8">
@@ -328,8 +329,14 @@ export default function App() {
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
               Se pretende melhorar a organização e o funcionamento do seu negócio, entre em
-              contacto. Se sente que o seu negócio podia funcionar melhor, vale a pena conversar.
-              A primeira conversa permite perceber o seu contexto e identificar onde existe margem real de melhoria.
+              contacto.
+              <br />
+              <br />
+              Se sente que o seu negócio podia funcionar melhor, vale a pena conversar.
+              <br />
+              <br />
+              A primeira conversa permite perceber o seu contexto e identificar onde existe margem
+              real de melhoria.
             </p>
           </div>
 
