@@ -76,6 +76,8 @@ export default function App() {
             <a href="#sobre" className="transition hover:text-slate-900">
               Sobre
             </a>
+            <a href="#perguntas-frequentes" className="transition hover:text-slate-900">
+              FAQ</a>
             <a href="#contactos" className="transition hover:text-slate-900">
               Contactos
             </a>
