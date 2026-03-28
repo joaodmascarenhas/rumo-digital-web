@@ -6,23 +6,23 @@ export default function App() {
   const services = [
     {
       title: "Organização de Processos",
-      text: "Estruturamos processos operacionais para reduzir confusão, evitar erros e tornar o trabalho mais claro e consistente.",
-    },
-    {
-      title: "Transformação Digital Prática",
-      text: "Aplicamos soluções simples para melhorar o funcionamento do negócio no dia a dia.",
-    },
-    {
-      title: "Otimização de Ferramentas e Fluxos",
-      text: "Melhoramos a forma como as equipas utilizam ferramentas e informação.",
+      text: "Estruturamos processos operacionais para reduzir desorganização, evitar erros e tornar o trabalho mais claro, consistente e controlável.",
     },
     {
       title: "Melhoria Operacional",
-      text: "Identificamos oportunidades para tornar a operação mais eficiente e sustentável.",
+      text: "Identificamos falhas, bloqueios e ineficiências no dia a dia, propondo melhorias práticas ajustadas à realidade do negócio.",
+    },
+    {
+      title: "Gestão de Tarefas e Registos",
+      text: "Criamos formas simples de acompanhar tarefas, pedidos, ações e informação importante, com maior visibilidade e controlo.",
+    },
+    {
+      title: "Estruturação de Informação",
+      text: "Ajudamos a organizar informação dispersa e a definir uma base de trabalho mais clara, acessível e fácil de manter.",
     },
     {
       title: "Criação de Websites",
-      text: "Desenvolvemos websites simples, rápidos e profissionais, ajustados à realidade do negócio e fáceis de manter.",
+      text: "Desenvolvemos websites simples, rápidos e profissionais, ajustados à realidade do negócio e fáceis de gerir.",
     },
   ];
 
@@ -30,22 +30,22 @@ export default function App() {
     {
       number: "01",
       title: "Diagnóstico",
-      text: "Analisamos o contexto atual e identificamos bloqueios, ineficiências e falhas de organização.",
+      text: "Analisamos o funcionamento atual do negócio e identificamos dificuldades operacionais, falhas de organização e pontos de melhoria.",
     },
     {
       number: "02",
       title: "Estruturação",
-      text: "Definimos uma abordagem simples, prática e ajustada à realidade do negócio.",
+      text: "Definimos uma abordagem simples, prática e ajustada à dimensão, aos objetivos e à realidade do cliente.",
     },
     {
       number: "03",
       title: "Implementação",
-      text: "Aplicamos melhorias de forma gradual, sem complicar a operação.",
+      text: "Aplicamos melhorias de forma clara e progressiva, sem criar complexidade desnecessária na operação.",
     },
     {
       number: "04",
-      title: "Evolução",
-      text: "Acompanhamos os resultados e ajustamos o que for necessário para garantir valor real.",
+      title: "Acompanhamento",
+      text: "Avaliamos o resultado das alterações e ajustamos o necessário para garantir utilidade real no dia a dia.",
     },
   ];
 
@@ -59,7 +59,7 @@ export default function App() {
             </div>
             <div>
               <p className="text-sm font-semibold tracking-wide text-slate-900">Rumo Digital</p>
-              <p className="text-xs text-slate-500">Consultoria prática e operacional</p>
+              <p className="text-xs text-slate-500">Organização e melhoria operacional</p>
             </div>
           </div>
 
@@ -76,8 +76,8 @@ export default function App() {
             <a href="#sobre" className="transition hover:text-slate-900">
               Sobre
             </a>
-            <a href="#contacto" className="transition hover:text-slate-900">
-              Contacto
+            <a href="#contactos" className="transition hover:text-slate-900">
+              Contactos
             </a>
           </nav>
         </div>
@@ -87,21 +87,21 @@ export default function App() {
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
           <div className="flex flex-col justify-center">
             <div className="mb-6 inline-flex w-fit rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-slate-200">
-              Clareza, estrutura e melhoria operacional
+              Clareza, estrutura e melhor funcionamento
             </div>
 
             <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              Simplificamos operações. Tornamos o trabalho mais claro e eficiente.
+              Mais organização, mais controlo e melhor funcionamento no seu negócio.
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-              Ajudamos a organizar, clarificar e melhorar o funcionamento do dia a dia — sem
-              complicações técnicas.
+              Ajudamos pequenas empresas a organizar processos, estruturar o trabalho e melhorar a
+              operação do dia a dia, de forma prática e ajustada à sua realidade.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
-                href="#contacto"
+                href="#contactos"
                 className="rounded-2xl bg-orange-500 px-6 py-3 text-center text-sm font-semibold text-white shadow-sm transition hover:scale-[1.01]"
               >
                 Fale connosco
@@ -126,12 +126,12 @@ export default function App() {
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
                   <p className="text-sm text-slate-400">Abordagem</p>
-                  <p className="mt-2 font-medium">Simples, prática e sustentável</p>
+                  <p className="mt-2 font-medium">Prática, simples e sustentável</p>
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
                   <p className="text-sm text-slate-400">Objetivo</p>
-                  <p className="mt-2 font-medium">Mais clareza e menos fricção</p>
+                  <p className="mt-2 font-medium">Mais controlo e menos desorganização</p>
                 </div>
               </div>
             </div>
@@ -148,8 +148,8 @@ export default function App() {
             O que fazemos
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            Intervenções simples, orientadas à realidade do negócio e focadas em melhorar a
-            operação.
+            Apoiamos pequenos negócios com soluções práticas para organizar melhor a operação,
+            melhorar processos e criar uma base de trabalho mais clara e eficiente.
           </p>
         </div>
 
@@ -157,7 +157,7 @@ export default function App() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-[2rem] border border-slate-200 bg-slate-100 p-8 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+              className="rounded-[2rem] border border-slate-200 bg-slate-100 p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <h3 className="text-xl font-bold text-orange-500">{service.title}</h3>
               <p className="mt-4 leading-7 text-slate-600">{service.text}</p>
@@ -175,6 +175,10 @@ export default function App() {
             <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
               Como trabalhamos
             </h2>
+            <p className="mt-4 text-lg text-slate-600">
+              Trabalhamos de forma estruturada, simples e próxima da realidade do cliente, sem
+              complicar o que deve ser claro.
+            </p>
           </div>
 
           <div className="mt-12 grid gap-6 lg:grid-cols-4">
@@ -204,17 +208,17 @@ export default function App() {
 
             <div className="mt-6 space-y-5 text-lg leading-8 text-slate-600">
               <p>
-                A Rumo Digital nasce com um objetivo simples: ajudar negócios a funcionar melhor,
-                com mais organização, clareza e eficiência.
+                A Rumo Digital nasceu com um objetivo claro: ajudar pequenas empresas a trabalhar
+                com mais organização, mais controlo e maior clareza no dia a dia.
               </p>
               <p>
-                Num contexto em que muitas empresas acumulam ferramentas, tarefas manuais e
-                processos pouco claros, o nosso foco está em simplificar, estruturar e melhorar o
-                que realmente impacta a operação.
+                Num contexto em que muitos negócios continuam dependentes de processos pouco
+                definidos, informação dispersa e rotinas difíceis de acompanhar, o nosso foco está
+                em estruturar, simplificar e melhorar o que realmente impacta a operação.
               </p>
               <p>
-                Acreditamos numa transformação digital prática — sem complexidade desnecessária, sem
-                discursos vazios e com foco em utilidade real.
+                Acreditamos numa abordagem prática, à medida de cada cliente e sem complexidade desnecessária,
+                sempre orientada para utilidade real e melhoria sustentada.
               </p>
             </div>
           </div>
@@ -223,35 +227,35 @@ export default function App() {
             <h3 className="text-2xl font-semibold">Princípios da marca</h3>
             <div className="mt-6 space-y-4 text-slate-300">
               <p>
-                <span className="font-semibold text-white">Simplicidade:</span> evitar complexidade
-                desnecessária.
+                <span className="font-semibold text-white">Simplicidade:</span> evitar soluções
+                pesadas, excessivas ou difíceis de aplicar.
               </p>
               <p>
-                <span className="font-semibold text-white">Clareza:</span> tornar o funcionamento
-                do negócio mais evidente e controlável.
+                <span className="font-semibold text-white">Clareza:</span> tornar a operação mais
+                compreensível, organizada e controlável.
               </p>
               <p>
-                <span className="font-semibold text-white">Utilidade real:</span> foco no que traz
-                impacto operacional concreto.
+                <span className="font-semibold text-white">Utilidade real:</span> melhorar o que
+                tem impacto prático no funcionamento do negócio.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contacto" className="bg-slate-950 text-white">
+      <section id="contactos" className="bg-slate-950 text-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-2 lg:px-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
-              Contacto
+              Contactos
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
               Contacte-nos
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
               Se pretende melhorar a organização e o funcionamento do seu negócio, entre em
-              contacto. A primeira conversa serve para perceber o contexto e identificar onde poderá
-              existir mais valor.
+              contacto. A primeira conversa permite perceber o seu contexto e identificar onde
+              existe margem real de melhoria.
             </p>
           </div>
 
