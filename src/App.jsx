@@ -91,7 +91,9 @@ export default function App() {
             </div>
 
             <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              Mais organização, mais controlo e melhor funcionamento no seu negócio.
+              Mais organização no dia a dia.
+              <br />
+              Mais controlo no seu negócio.
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
@@ -148,8 +150,9 @@ export default function App() {
             O que fazemos
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            Apoiamos pequenos negócios com soluções práticas para organizar melhor a operação,
-            melhorar processos e criar uma base de trabalho mais clara e eficiente.
+            Apoiamos pequenos negócios com soluções práticas para organizar melhor a operação e melhorar processos.
+            <br />
+            Criamos uma base de trabalho mais clara, eficiente e com maior controlo no dia a dia.
           </p>
         </div>
 
@@ -220,6 +223,9 @@ export default function App() {
                 Acreditamos numa abordagem prática, à medida de cada cliente e sem complexidade desnecessária,
                 sempre orientada para utilidade real e melhoria sustentada.
               </p>
+              <p className="font-semibold text-slate-900">
+                Não complicamos. Organizamos.
+               </p> 
             </div>
           </div>
 
@@ -254,8 +260,8 @@ export default function App() {
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
               Se pretende melhorar a organização e o funcionamento do seu negócio, entre em
-              contacto. A primeira conversa permite perceber o seu contexto e identificar onde
-              existe margem real de melhoria.
+              contacto. Se sente que o seu negócio podia funcionar melhor, vale a pena conversar.
+              A primeira conversa permite perceber o seu contexto e identificar onde existe margem real de melhoria.
             </p>
           </div>
 
