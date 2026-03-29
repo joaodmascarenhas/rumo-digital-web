@@ -1,3 +1,5 @@
+import logoFull from "./assets/rumo_digital_transparent_real.png";
+import logoIcon from "./assets/logo-icon.png";
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function App() {
@@ -51,35 +53,37 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-900 text-lg font-semibold text-white">
-              R
-            </div>
+            <img
+              src={logoIcon}
+              alt="Rumo Digital"
+              className="h-10 w-10 object-contain"
+            />
             <div>
-              <p className="text-sm font-semibold tracking-wide text-slate-900">Rumo Digital</p>
-              <p className="text-xs text-slate-500">Organização e melhoria operacional</p>
+              <p className="text-sm font-semibold tracking-wide text-white">Rumo Digital</p>
+              <p className="text-xs text-slate-400">Organização e melhoria operacional</p>
             </div>
           </div>
 
-          <nav className="hidden gap-8 text-sm text-slate-600 md:flex">
-            <a href="#inicio" className="transition hover:text-slate-900">
+          <nav className="hidden gap-8 text-sm text-slate-300 md:flex">
+            <a href="#inicio" className="transition hover:text-white">
               Início
             </a>
-            <a href="#servicos" className="transition hover:text-slate-900">
+            <a href="#servicos" className="transition hover:text-white">
               Serviços
             </a>
-            <a href="#como-trabalhamos" className="transition hover:text-slate-900">
+            <a href="#como-trabalhamos" className="transition hover:text-white">
               Como Trabalhamos
             </a>
-            <a href="#sobre" className="transition hover:text-slate-900">
+            <a href="#sobre" className="transition hover:text-white">
               Sobre
             </a>
-            <a href="#perguntas-frequentes" className="transition hover:text-slate-900">
-              FAQ
+            <a href="#perguntas-frequentes" className="transition hover:text-white">
+              Dúvidas
             </a>
-            <a href="#contactos" className="transition hover:text-slate-900">
+            <a href="#contactos" className="transition hover:text-white">
               Contactos
             </a>
           </nav>
@@ -121,22 +125,32 @@ export default function App() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center">
-            <div className="grid w-full max-w-xl gap-4 rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur">
-              <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
-                <p className="text-sm text-slate-400">Foco</p>
-                <p className="mt-2 text-xl font-semibold">Organização e melhoria operacional</p>
-              </div>
+          <div className="flex items-start justify-center -mt-10">
+            <div className="w-full max-w-2xl">
+              <img
+                src={logoFull}
+                alt="Rumo Digital"
+                className="mt-2 mb-0 w-full object-contain"
+              />
 
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
-                  <p className="text-sm text-slate-400">Abordagem</p>
-                  <p className="mt-2 font-medium">Prática, simples e sustentável</p>
+              <div className="grid w-full gap-3 rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-xl backdrop-blur">
+                <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
+                  <p className="text-sm text-slate-400">Foco</p>
+                  <p className="mt-2 text-xl font-semibold">
+                    Organização e melhoria operacional
+                  </p>
                 </div>
 
-                <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
-                  <p className="text-sm text-slate-400">Objetivo</p>
-                  <p className="mt-2 font-medium">Mais controlo e menos desorganização</p>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
+                    <p className="text-sm text-slate-400">Abordagem</p>
+                    <p className="mt-2 font-medium">Prática, simples e sustentável</p>
+                  </div>
+
+                  <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
+                    <p className="text-sm text-slate-400">Objetivo</p>
+                    <p className="mt-2 font-medium">Mais controlo e menos desorganização</p>
+                  </div>
                 </div>
               </div>
             </div>
