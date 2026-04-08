@@ -51,6 +51,49 @@ export default function App() {
     },
   ];
 
+  const faqs = [
+    {
+      question: "O meu negócio é pequeno. Isto faz sentido para mim?",
+      answer:
+        "Faz. Na maioria dos casos, são precisamente os negócios mais pequenos que mais beneficiam de uma melhor organização. Pequenas melhorias no dia a dia podem ajudar a poupar tempo e tornar o negócio mais organizado e fácil de gerir.",
+    },
+    {
+      question: "Já trabalho assim há anos. Vale a pena mudar?",
+      answer:
+        "Se o negócio está a funcionar bem, não há necessidade de mudar. Mas quando começam a surgir dificuldades no dia a dia, perda de tempo ou falta de organização, é sinal de que existe espaço para melhorar.",
+    },
+    {
+      question: "Não percebo nada de tecnologia.",
+      answer:
+        "Não precisa de perceber de tecnologia. O objetivo é simplificar o dia a dia, não complicar. Tudo é pensado para ser simples e fácil de usar.",
+    },
+    {
+      question: "Isto vai obrigar-me a mudar tudo?",
+      answer:
+        "Não. As melhorias são feitas de forma gradual e ajustadas ao que já existe. O objetivo é melhorar o que faz sentido, sem criar complicações no dia a dia.",
+    },
+    {
+      question: "Quanto é que isto custa?",
+      answer:
+        "Depende do que for necessário melhorar. A primeira conversa serve para perceber o negócio e ver o que faz sentido, de forma simples e ajustada a cada caso.",
+    },
+    {
+      question: "Tenho ouvido falar de inteligência artificial. Isto é para mim?",
+      answer:
+        "Sim, mas provavelmente não da forma como imagina. Não precisa de contratar programadores nem fazer grandes investimentos. Existem ferramentas acessíveis e económicas que já usam IA e que podem ajudar em tarefas do dia a dia - prever vendas, organizar stocks, gerir agendamentos ou responder a clientes de forma automática. O objetivo é aproveitar o que já existe, de forma prática e sem complicar.",
+    },
+    {
+      question: "A minha concorrência já usa tecnologia. Estou a ficar para trás?",
+      answer:
+        "Não necessariamente. O importante não é usar tecnologia por usar, mas sim resolver os problemas certos. Se o seu negócio funciona bem como está, não precisa de mudar. Mas se sente desorganização, perda de tempo ou dificuldade em acompanhar a procura, então pode haver soluções simples que ajudem. O foco deve estar sempre em melhorar o que faz sentido, não em complicar o que já funciona.",
+    },
+    {
+      question: "Vejo grandes empresas a usar sistemas complicados. Preciso disso?",
+      answer:
+        "Não. As grandes empresas têm equipas técnicas e orçamentos que permitem usar sistemas complexos. Para negócios mais pequenos, o que funciona são soluções diretas, práticas e fáceis de gerir no dia a dia - sem precisar de formação avançada ou apoio técnico permanente.",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-white text-slate-900">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/95 backdrop-blur">
@@ -303,105 +346,21 @@ export default function App() {
             </h2>
           </div>
 
-          <div className="mt-12 space-y-8">
-            <div>
-              <h3 className="text-lg font-semibold text-slate-900">
-                “O meu negócio é pequeno. Isto faz sentido para mim?”
-              </h3>
-              <p className="mt-2 leading-7 text-slate-600">
-                Faz. Na maioria dos casos, são precisamente os negócios mais
-                pequenos que mais beneficiam de uma melhor organização.
-                Pequenas melhorias no dia a dia podem ajudar a poupar tempo e
-                tornar o negócio mais organizado e fácil de gerir.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-slate-900">
-                “Já trabalho assim há anos. Vale a pena mudar?”
-              </h3>
-              <p className="mt-2 leading-7 text-slate-600">
-                Se o negócio está a funcionar bem, não há necessidade de mudar.
-                Mas quando começam a surgir dificuldades no dia a dia, perda de
-                tempo ou falta de organização, é sinal de que existe espaço para
-                melhorar.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-slate-900">
-                “Não percebo nada de tecnologia.”
-              </h3>
-              <p className="mt-2 leading-7 text-slate-600">
-                Não precisa de perceber de tecnologia. O objetivo é simplificar
-                o dia a dia, não complicar. Tudo é pensado para ser simples e
-                fácil de usar.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-slate-900">
-                “Isto vai obrigar-me a mudar tudo?”
-              </h3>
-              <p className="mt-2 leading-7 text-slate-600">
-                Não. As melhorias são feitas de forma gradual e ajustadas ao que
-                já existe. O objetivo é melhorar o que faz sentido, sem criar
-                complicações no dia a dia.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-slate-900">
-                “Quanto é que isto custa?”
-              </h3>
-              <p className="mt-2 leading-7 text-slate-600">
-                Depende do que for necessário melhorar. A primeira conversa
-                serve para perceber o negócio e ver o que faz sentido, de forma
-                simples e ajustada a cada caso.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-slate-900">
-                “Tenho ouvido falar de inteligência artificial. Isto é para mim?”
-              </h3>
-              <p className="mt-2 leading-7 text-slate-600">
-                Sim, mas provavelmente não da forma como imagina. Não precisa de
-                contratar programadores nem fazer grandes investimentos. Existem
-                ferramentas acessíveis e económicas que já usam IA e que podem
-                ajudar em tarefas do dia a dia - prever vendas, organizar stocks,
-                gerir agendamentos ou responder a clientes de forma automática.
-                O objetivo é aproveitar o que já existe, de forma prática e sem
-                complicar.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-slate-900">
-                “A minha concorrência já usa tecnologia. Estou a ficar para trás?”
-              </h3>
-              <p className="mt-2 leading-7 text-slate-600">
-                Não necessariamente. O importante não é usar tecnologia por usar,
-                mas sim resolver os problemas certos. Se o seu negócio funciona
-                bem como está, não precisa de mudar. Mas se sente desorganização,
-                perda de tempo ou dificuldade em acompanhar a procura, então pode
-                haver soluções simples que ajudem. O foco deve estar sempre em
-                melhorar o que faz sentido, não em complicar o que já funciona.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-slate-900">
-                “Vejo grandes empresas a usar sistemas complicados. Preciso disso?”
-              </h3>
-              <p className="mt-2 leading-7 text-slate-600">
-                Não. As grandes empresas têm equipas técnicas e orçamentos que
-                permitem usar sistemas complexos. Para negócios mais pequenos, o
-                que funciona são soluções diretas, práticas e fáceis de gerir no
-                dia a dia - sem precisar de formação avançada ou apoio técnico
-                permanente.
-              </p>
-            </div>
+          <div className="mt-12 space-y-4">
+            {faqs.map((faq) => (
+              <details
+                key={faq.question}
+                className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-slate-900 marker:hidden">
+                  <span>“{faq.question}”</span>
+                  <span className="text-2xl font-light text-orange-500 transition group-open:rotate-45">
+                    +
+                  </span>
+                </summary>
+                <p className="mt-4 leading-7 text-slate-600">{faq.answer}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>
