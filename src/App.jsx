@@ -12,11 +12,11 @@ export default function App() {
     },
     {
       title: "Melhoria Operacional",
-      text: "Identificamos falhas, bloqueios e ineficiências no dia a dia, propondo melhorias práticas ajustadas à realidade do negócio.",
+      text: "Identificamos falhas, bloqueios e ineficiências no dia a dia, propondo melhorias concretas ajustadas ao contexto do negócio.",
     },
     {
       title: "Gestão de Tarefas e Registos",
-      text: "Criamos formas simples de acompanhar tarefas, pedidos, ações e informação importante, com maior visibilidade e controlo.",
+      text: "Criamos formas práticas de acompanhar tarefas, pedidos, ações e informação importante, com maior visibilidade e controlo.",
     },
     {
       title: "Estruturação de Informação",
@@ -24,7 +24,7 @@ export default function App() {
     },
     {
       title: "Criação de Websites",
-      text: "Desenvolvemos websites simples, rápidos e profissionais, ajustados à realidade do negócio e fáceis de gerir.",
+      text: "Desenvolvemos websites práticos e profissionais, ajustados à realidade do negócio e fáceis de gerir.",
     },
   ];
 
@@ -37,12 +37,12 @@ export default function App() {
     {
       number: "02",
       title: "Estruturação",
-      text: "Definimos uma abordagem simples, prática e ajustada à dimensão, aos objetivos e à realidade do cliente.",
+      text: "Definimos uma abordagem direta, prática e ajustada à dimensão, aos objetivos e à situação específica do cliente.",
     },
     {
       number: "03",
       title: "Implementação",
-      text: "Aplicamos melhorias de forma clara e progressiva, sem criar complexidade desnecessária na operação.",
+      text: "Aplicamos melhorias de forma clara e progressiva, sem criar complexidade desnecessária no funcionamento.",
     },
     {
       number: "04",
@@ -62,8 +62,12 @@ export default function App() {
               className="h-10 w-10 object-contain"
             />
             <div>
-              <p className="text-sm font-semibold tracking-wide text-white">Rumo Digital</p>
-              <p className="text-xs text-slate-400">Organização e melhoria operacional</p>
+              <p className="text-sm font-semibold tracking-wide text-white">
+                Rumo Digital
+              </p>
+              <p className="text-xs text-slate-400">
+                Organização e melhoria operacional
+              </p>
             </div>
           </div>
 
@@ -77,11 +81,11 @@ export default function App() {
             <a href="#como-trabalhamos" className="transition hover:text-white">
               Como Trabalhamos
             </a>
-            <a href="#sobre" className="transition hover:text-white">
-              Sobre
+            <a href="#sobre-nos" className="transition hover:text-white">
+              Sobre nós
             </a>
             <a href="#perguntas-frequentes" className="transition hover:text-white">
-              Dúvidas
+              Perguntas Frequentes
             </a>
             <a href="#contactos" className="transition hover:text-white">
               Contactos
@@ -94,18 +98,19 @@ export default function App() {
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
           <div className="flex flex-col justify-center">
             <div className="mb-6 inline-flex w-fit rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-slate-200">
-              Clareza, estrutura e melhor funcionamento
+              Organização e melhoria operacional
             </div>
 
             <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              Mais organização no dia a dia.
+              Melhor organização no dia a dia.
               <br />
               Mais controlo no seu negócio.
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-              Ajudamos pequenas empresas a organizar processos, estruturar o trabalho e melhorar a
-              operação do dia a dia, de forma prática e ajustada à sua realidade.
+              Ajudamos pequenas empresas a organizar processos, estruturar o
+              trabalho e melhorar a operação do dia a dia, de forma prática e
+              ajustada à sua realidade.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -144,12 +149,16 @@ export default function App() {
                 <div className="grid gap-3 sm:grid-cols-2">
                   <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
                     <p className="text-sm text-slate-400">Abordagem</p>
-                    <p className="mt-2 font-medium">Prática, simples e sustentável</p>
+                    <p className="mt-2 font-medium">
+                      Prática, direta e sustentável
+                    </p>
                   </div>
 
                   <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
                     <p className="text-sm text-slate-400">Objetivo</p>
-                    <p className="mt-2 font-medium">Mais controlo e menos desorganização</p>
+                    <p className="mt-2 font-medium">
+                      Mais controlo e menos desorganização
+                    </p>
                   </div>
                 </div>
               </div>
@@ -158,7 +167,10 @@ export default function App() {
         </div>
       </section>
 
-      <section id="servicos" className="scroll-mt-24 mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <section
+        id="servicos"
+        className="scroll-mt-24 mx-auto max-w-7xl px-6 py-20 lg:px-8"
+      >
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
             Serviços
@@ -167,10 +179,11 @@ export default function App() {
             O que fazemos
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            Apoiamos pequenos negócios com soluções práticas para organizar melhor a operação e
-            melhorar processos.
+            Apoiamos pequenos negócios com soluções úteis para melhorar processos
+            e tornar a operação do dia a dia mais eficiente.
             <br />
-            Criamos uma base de trabalho mais clara, eficiente e com maior controlo no dia a dia.
+            Criamos uma base de trabalho mais clara, mais eficiente e com maior
+            controlo no dia a dia.
           </p>
         </div>
 
@@ -180,7 +193,9 @@ export default function App() {
               key={service.title}
               className="rounded-[2rem] border border-slate-200 bg-slate-100 p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
-              <h3 className="text-xl font-bold text-orange-500">{service.title}</h3>
+              <h3 className="text-xl font-bold text-orange-500">
+                {service.title}
+              </h3>
               <p className="mt-4 leading-7 text-slate-600">{service.text}</p>
             </div>
           ))}
@@ -197,8 +212,8 @@ export default function App() {
               Como trabalhamos
             </h2>
             <p className="mt-4 text-lg text-slate-600">
-              Trabalhamos de forma estruturada, simples e próxima da realidade do cliente, sem
-              complicar o que deve ser claro.
+              Trabalhamos de forma estruturada, direta e adaptada às necessidades
+              do cliente, sem complicar o que deve ser claro.
             </p>
           </div>
 
@@ -208,7 +223,9 @@ export default function App() {
                 key={step.number}
                 className="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-slate-200"
               >
-                <p className="text-sm font-semibold text-orange-500">{step.number}</p>
+                <p className="text-sm font-semibold text-orange-500">
+                  {step.number}
+                </p>
                 <h3 className="mt-3 text-xl font-semibold">{step.title}</h3>
                 <p className="mt-4 leading-7 text-slate-600">{step.text}</p>
               </div>
@@ -217,11 +234,14 @@ export default function App() {
         </div>
       </section>
 
-      <section id="sobre" className="scroll-mt-24 mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <section
+        id="sobre-nos"
+        className="scroll-mt-24 mx-auto max-w-7xl px-6 py-20 lg:px-8"
+      >
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-              Sobre
+              Sobre nós
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
               Sobre a Rumo Digital
@@ -229,36 +249,43 @@ export default function App() {
 
             <div className="mt-6 space-y-5 text-lg leading-8 text-slate-600">
               <p>
-                A Rumo Digital nasceu com um objetivo claro: ajudar pequenas empresas a trabalhar
-                com mais organização, mais controlo e maior clareza no dia a dia.
+                A Rumo Digital nasceu com um objetivo claro: ajudar pequenas e médias
+                empresas a trabalhar com mais organização, mais controlo e maior
+                clareza no dia a dia.
               </p>
               <p>
-                Num contexto em que muitos negócios continuam dependentes de processos pouco
-                definidos, informação dispersa e rotinas difíceis de acompanhar, o nosso foco está
-                em estruturar, simplificar e melhorar o que realmente impacta a operação.
+                Num contexto em que muitos negócios continuam dependentes de
+                processos pouco definidos, informação dispersa e rotinas
+                difíceis de acompanhar, o nosso foco está em estruturar,
+                simplificar e melhorar o que realmente impacta o funcionamento do negócio.
               </p>
               <p>
-                Acreditamos numa abordagem prática, à medida de cada cliente e sem complexidade
-                desnecessária, sempre orientada para utilidade real e melhoria sustentada.
+                Acreditamos numa abordagem prática, à medida de cada cliente e
+                sem complexidade desnecessária, sempre orientada para utilidade
+                real e melhoria sustentada.
               </p>
-              <p className="font-semibold text-slate-900">Não complicamos. Organizamos.</p>
+              <p className="font-semibold text-slate-900">
+                Não complicamos. Organizamos.
+              </p>
             </div>
           </div>
 
           <div className="rounded-[2rem] bg-slate-900 p-8 text-white shadow-xl">
-            <h3 className="text-2xl font-semibold">Princípios da marca</h3>
+            <h3 className="text-2xl font-semibold">Valores da marca</h3>
             <div className="mt-6 space-y-4 text-slate-300">
               <p>
-                <span className="font-semibold text-white">Simplicidade:</span> evitar soluções
-                pesadas, excessivas ou difíceis de aplicar.
+                <span className="font-semibold text-white">Simplicidade:</span>{" "}
+                evitar soluções pesadas, excessivas ou difíceis de aplicar.
               </p>
               <p>
-                <span className="font-semibold text-white">Clareza:</span> tornar a operação mais
-                compreensível, organizada e controlável.
+                <span className="font-semibold text-white">Clareza:</span>{" "}
+                tornar a operação do dia a dia mais compreensível, organizada e controlável.
               </p>
               <p>
-                <span className="font-semibold text-white">Utilidade real:</span> melhorar o que
-                tem impacto prático no funcionamento do negócio.
+                <span className="font-semibold text-white">
+                  Utilidade real:
+                </span>{" "}
+                melhorar o que tem impacto prático no funcionamento do negócio.
               </p>
             </div>
           </div>
@@ -282,9 +309,10 @@ export default function App() {
                 “O meu negócio é pequeno. Isto faz sentido para mim?”
               </h3>
               <p className="mt-2 leading-7 text-slate-600">
-                Faz. Na maioria dos casos, são precisamente os negócios mais pequenos que mais
-                beneficiam de uma melhor organização. Pequenas melhorias no dia a dia podem ajudar
-                a poupar tempo e tornar o negócio mais organizado e fácil de gerir.
+                Faz. Na maioria dos casos, são precisamente os negócios mais
+                pequenos que mais beneficiam de uma melhor organização.
+                Pequenas melhorias no dia a dia podem ajudar a poupar tempo e
+                tornar o negócio mais organizado e fácil de gerir.
               </p>
             </div>
 
@@ -293,9 +321,10 @@ export default function App() {
                 “Já trabalho assim há anos. Vale a pena mudar?”
               </h3>
               <p className="mt-2 leading-7 text-slate-600">
-                Se o negócio está a funcionar bem, não há necessidade de mudar. Mas quando começam
-                a surgir dificuldades no dia a dia, perda de tempo ou falta de organização, é sinal
-                de que existe espaço para melhorar.
+                Se o negócio está a funcionar bem, não há necessidade de mudar.
+                Mas quando começam a surgir dificuldades no dia a dia, perda de
+                tempo ou falta de organização, é sinal de que existe espaço para
+                melhorar.
               </p>
             </div>
 
@@ -304,8 +333,9 @@ export default function App() {
                 “Não percebo nada de tecnologia.”
               </h3>
               <p className="mt-2 leading-7 text-slate-600">
-                Não precisa de perceber de tecnologia. O objetivo é simplificar o dia a dia, não
-                complicar. Tudo é pensado para ser simples e fácil de usar.
+                Não precisa de perceber de tecnologia. O objetivo é simplificar
+                o dia a dia, não complicar. Tudo é pensado para ser simples e
+                fácil de usar.
               </p>
             </div>
 
@@ -314,8 +344,9 @@ export default function App() {
                 “Isto vai obrigar-me a mudar tudo?”
               </h3>
               <p className="mt-2 leading-7 text-slate-600">
-                Não. As melhorias são feitas de forma gradual e ajustadas ao que já existe. O
-                objetivo é melhorar o que faz sentido, sem criar complicações no dia a dia.
+                Não. As melhorias são feitas de forma gradual e ajustadas ao que
+                já existe. O objetivo é melhorar o que faz sentido, sem criar
+                complicações no dia a dia.
               </p>
             </div>
 
@@ -324,8 +355,51 @@ export default function App() {
                 “Quanto é que isto custa?”
               </h3>
               <p className="mt-2 leading-7 text-slate-600">
-                Depende do que for necessário melhorar. A primeira conversa serve para perceber o
-                negócio e ver o que faz sentido, de forma simples e ajustada a cada caso.
+                Depende do que for necessário melhorar. A primeira conversa
+                serve para perceber o negócio e ver o que faz sentido, de forma
+                simples e ajustada a cada caso.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-slate-900">
+                “Tenho ouvido falar de inteligência artificial. Isto é para mim?”
+              </h3>
+              <p className="mt-2 leading-7 text-slate-600">
+                Sim, mas provavelmente não da forma como imagina. Não precisa de
+                contratar programadores nem fazer grandes investimentos. Existem
+                ferramentas acessíveis e económicas que já usam IA e que podem
+                ajudar em tarefas do dia a dia - prever vendas, organizar stocks,
+                gerir agendamentos ou responder a clientes de forma automática.
+                O objetivo é aproveitar o que já existe, de forma prática e sem
+                complicar.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-slate-900">
+                “A minha concorrência já usa tecnologia. Estou a ficar para trás?”
+              </h3>
+              <p className="mt-2 leading-7 text-slate-600">
+                Não necessariamente. O importante não é usar tecnologia por usar,
+                mas sim resolver os problemas certos. Se o seu negócio funciona
+                bem como está, não precisa de mudar. Mas se sente desorganização,
+                perda de tempo ou dificuldade em acompanhar a procura, então pode
+                haver soluções simples que ajudem. O foco deve estar sempre em
+                melhorar o que faz sentido, não em complicar o que já funciona.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-slate-900">
+                “Vejo grandes empresas a usar sistemas complicados. Preciso disso?”
+              </h3>
+              <p className="mt-2 leading-7 text-slate-600">
+                Não. As grandes empresas têm equipas técnicas e orçamentos que
+                permitem usar sistemas complexos. Para negócios mais pequenos, o
+                que funciona são soluções diretas, práticas e fáceis de gerir no
+                dia a dia - sem precisar de formação avançada ou apoio técnico
+                permanente.
               </p>
             </div>
           </div>
@@ -342,16 +416,57 @@ export default function App() {
               Contacte-nos
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
-              Se pretende melhorar a organização e o funcionamento do seu negócio, entre em
-              contacto.
+              Se pretende melhorar a organização e o funcionamento do seu
+              negócio, fale connosco.
               <br />
               <br />
-              Se sente que o seu negócio podia funcionar melhor, vale a pena conversar.
+              Se sente que o seu negócio podia funcionar melhor, vale a pena
+              conversarmos.
               <br />
               <br />
-              A primeira conversa permite perceber o seu contexto e identificar onde existe margem
-              real de melhoria.
+              Uma primeira conversa permite perceber o seu contexto e identificar
+              onde existe margem real de melhoria.
             </p>
+
+            <div className="mt-8 space-y-4">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p className="text-sm text-slate-400">Telefone / WhatsApp</p>
+                <a
+                  href="https://wa.me/351917625892"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-2 flex items-center gap-3 text-lg font-medium text-white transition hover:text-orange-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="#25D366"
+                    className="h-5 w-5"
+                  >
+                    <path d="M12 2a10 10 0 00-8.94 14.47L2 22l5.73-1.06A10 10 0 1012 2zm5.06 13.72c-.21.59-1.23 1.12-1.69 1.19-.44.07-.99.1-1.6-.1-.37-.12-.85-.28-1.46-.55-2.57-1.11-4.25-3.83-4.38-4.01-.13-.18-1.04-1.38-1.04-2.63 0-1.25.65-1.86.88-2.12.23-.26.5-.33.67-.33h.48c.15 0 .35-.06.55.42.21.5.72 1.74.78 1.87.06.13.1.28.02.46-.08.18-.12.29-.23.45-.11.16-.23.36-.33.48-.11.12-.23.25-.1.49.13.25.59.97 1.26 1.57.86.77 1.58 1.01 1.83 1.13.25.12.39.1.54-.06.15-.16.65-.76.83-1.02.18-.26.36-.21.61-.13.25.08 1.6.75 1.88.88.28.13.46.2.53.31.07.11.07.64-.14 1.23z" />
+                  </svg>
+                  917 625 892
+                </a>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p className="text-sm text-slate-400">Email</p>
+                <a
+                  href="mailto:geral@rumodigital.pt"
+                  className="mt-2 flex items-center gap-3 text-lg font-medium text-white transition hover:text-orange-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path d="M2.25 4.5h19.5A1.5 1.5 0 0123.25 6v12a1.5 1.5 0 01-1.5 1.5H2.25A1.5 1.5 0 01.75 18V6a1.5 1.5 0 011.5-1.5zm0 1.5v.638l9.75 5.85 9.75-5.85V6H2.25zm19.5 3.112l-7.66 4.596a1.5 1.5 0 01-1.58 0L2.25 9.112V18h19.5V9.112z" />
+                  </svg>
+                  geral@rumodigital.pt
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur">
@@ -436,7 +551,7 @@ export default function App() {
       <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between lg:px-8">
           <p>© 2026 Rumo Digital. Todos os direitos reservados.</p>
-          <p>Clareza. Estrutura. Melhoria operacional.</p>
+          <p>Organização e melhoria operacional.</p>
         </div>
       </footer>
     </div>
