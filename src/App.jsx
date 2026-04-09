@@ -5,28 +5,36 @@ import { useForm, ValidationError } from "@formspree/react";
 export default function App() {
   const [state, handleSubmit] = useForm("mvzvvzaa");
 
-  const services = [
-    {
-      title: "Organização de Processos",
-      text: "Estruturamos processos operacionais para reduzir desorganização, evitar erros e tornar o trabalho mais claro, consistente e controlável.",
-    },
-    {
-      title: "Melhoria Operacional",
-      text: "Identificamos falhas, bloqueios e ineficiências no dia a dia, propondo melhorias concretas ajustadas ao contexto do negócio.",
-    },
-    {
-      title: "Gestão de Tarefas e Registos",
-      text: "Criamos formas práticas de acompanhar tarefas, pedidos, ações e informação importante, com maior visibilidade e controlo.",
-    },
-    {
-      title: "Estruturação de Informação",
-      text: "Ajudamos a organizar informação dispersa e a definir uma base de trabalho mais clara, acessível e fácil de manter.",
-    },
-    {
-      title: "Criação de Websites",
-      text: "Desenvolvemos websites práticos e profissionais, ajustados à realidade do negócio e fáceis de gerir.",
-    },
-  ];
+const services = [
+  {
+    title: "Organização de Processos",
+    text: "Estruturamos processos operacionais para reduzir desorganização, evitar erros e tornar o trabalho mais claro, consistente e controlável.",
+  },
+  {
+    title: "Melhoria Operacional",
+    text: "Identificamos falhas, bloqueios e ineficiências no dia a dia, propondo melhorias concretas ajustadas ao contexto do negócio.",
+  },
+  {
+    title: "Gestão de Tarefas e Registos",
+    text: "Criamos formas práticas de acompanhar tarefas, pedidos, ações e informação importante, com maior visibilidade e controlo.",
+  },
+  {
+    title: "Automação de Processos",
+    text: "Identificamos tarefas repetitivas e manuais que podem ser automatizadas, libertando tempo e reduzindo erros. Utilizamos soluções simples e acessíveis, sem necessidade de programação.",
+  },
+  {
+    title: "Adoção de Tecnologia e IA",
+    text: "Ajudamos a identificar e implementar ferramentas tecnológicas acessíveis, incluindo soluções com inteligência artificial, ajustadas à realidade do negócio e sem necessidade de grandes investimentos.",
+  },
+  {
+    title: "Formação e Acompanhamento",
+    text: "Preparamos a equipa para utilizar as novas soluções no dia a dia e acompanhamos a implementação, garantindo que tudo funciona de forma prática e sustentável.",
+  },
+  {
+    title: "Criação de Websites",
+    text: "Desenvolvemos websites práticos e profissionais, ajustados à realidade do negócio e fáceis de gerir.",
+  },
+];
 
   const steps = [
     {
@@ -306,6 +314,10 @@ export default function App() {
                 Acreditamos numa abordagem prática, à medida de cada cliente e
                 sem complexidade desnecessária, sempre orientada para utilidade
                 real e melhoria sustentada.
+              </p>
+              <p>
+              Esta abordagem resulta de experiência prática acumulada ao longo de vários anos a trabalhar com processos, organização e melhoria do funcionamento de negócios, em diferentes contextos.
+              Esse percurso permite hoje identificar rapidamente problemas comuns e aplicar soluções simples, ajustadas à realidade de cada cliente.
               </p>
               <p className="font-semibold text-slate-900">
                 Não complicamos. Organizamos.
