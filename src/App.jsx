@@ -36,6 +36,49 @@ const services = [
   },
 ];
 
+const detailedServices = [
+  {
+    service: "Diagnóstico Operacional",
+    includes:
+      "Análise simples do negócio, organização atual, tarefas, pedidos e principais pontos de melhoria.",
+  },
+  {
+    service: "Organização de Email",
+    includes:
+      "Estruturação da caixa de email, pastas, etiquetas e regras simples para reduzir desorganização.",
+  },
+  {
+    service: "Gestão de Tarefas e Registos",
+    includes:
+      "Criação de uma forma simples de acompanhar tarefas, pedidos, ações e informação importante.",
+  },
+  {
+    service: "Estrutura de Projetos",
+    includes:
+      "Organização de projetos, acompanhamento do trabalho e criação de templates simples e claros.",
+  },
+  {
+    service: "Automação de Processos",
+    includes:
+      "Automatização de tarefas repetitivas, como respostas, registos, pedidos ou envio de informação.",
+  },
+  {
+    service: "Adoção de Tecnologia e IA",
+    includes:
+      "Apoio na escolha e utilização de ferramentas simples, incluindo soluções com inteligência artificial.",
+  },
+  {
+    service: "Formação e Acompanhamento",
+    includes:
+      "Sessões práticas para usar as soluções criadas e apoio na adaptação ao dia a dia.",
+  },
+  {
+    service: "Criação de Websites",
+    includes:
+      "Websites simples, profissionais e ajustados à realidade do negócio.",
+  },
+];
+
   const steps = [
     {
       number: "01",
@@ -251,6 +294,83 @@ const services = [
             </div>
           ))}
         </div>
+        <div className="mt-16 overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+  <table className="w-full">
+    <thead className="bg-slate-950 text-white">
+      <tr>
+        <th className="px-6 py-5 text-left text-sm font-semibold">
+          Serviço
+        </th>
+        <th className="px-6 py-5 text-left text-sm font-semibold">
+          O que inclui
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {detailedServices.map((item, index) => (
+        <tr
+          key={item.service}
+          className={`border-t border-slate-200 ${
+            index % 2 === 0 ? "bg-white" : "bg-orange-50/40"
+          }`}
+        >
+          <td className="px-6 py-5 font-semibold text-slate-900">
+            <div className="flex items-center gap-3">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-orange-500 text-sm font-bold text-white">
+                {index + 1}
+              </span>
+              {item.service}
+            </div>
+          </td>
+          <td className="px-6 py-5 leading-7 text-slate-600">
+            {item.includes}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+<div className="mt-20">
+  <h3 className="text-2xl font-semibold text-slate-900">
+    Pacotes e apoio contínuo
+  </h3>
+
+  <p className="mt-4 max-w-2xl text-slate-600">
+    Para além dos serviços individuais, também trabalhamos com pacotes ajustados à realidade de cada negócio, incluindo organização inicial, presença digital e apoio contínuo ao longo do tempo.
+  </p>
+
+  <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+    
+    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h4 className="font-semibold text-slate-900">Starter Digital</h4>
+      <p className="mt-2 text-sm text-slate-600">
+        Base inicial para organizar o negócio e começar com uma estrutura simples e funcional.
+      </p>
+    </div>
+
+    <div className="rounded-2xl border border-orange-200 bg-orange-50 p-6 shadow-sm">
+      <h4 className="font-semibold text-slate-900">CORE</h4>
+      <p className="mt-2 text-sm text-slate-600">
+        Organização completa do dia a dia com email, tarefas, projetos e formação prática.
+      </p>
+    </div>
+
+    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h4 className="font-semibold text-slate-900">Website + Organização</h4>
+      <p className="mt-2 text-sm text-slate-600">
+        Presença online profissional combinada com uma base de organização simples.
+      </p>
+    </div>
+
+    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h4 className="font-semibold text-slate-900">Apoio Contínuo</h4>
+      <p className="mt-2 text-sm text-slate-600">
+        Bolsas de horas, manutenção e suporte para pequenos ajustes ao longo do tempo.
+      </p>
+    </div>
+
+  </div>
+</div>
       </section>
 
       <section id="como-trabalhamos" className="scroll-mt-24 bg-slate-50">
