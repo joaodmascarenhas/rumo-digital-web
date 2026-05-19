@@ -294,14 +294,15 @@ const detailedServices = [
             </div>
           ))}
         </div>
-        <div className="mt-16 overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm">
-  <table className="w-full">
+       {/* Tabela desktop */}
+<div className="mt-16 hidden overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm md:block">
+  <table className="w-full table-fixed">
     <thead className="bg-slate-950 text-white">
       <tr>
-        <th className="px-6 py-5 text-left text-sm font-semibold">
+        <th className="w-1/3 px-6 py-5 text-left text-sm font-semibold">
           Serviço
         </th>
-        <th className="px-6 py-5 text-left text-sm font-semibold">
+        <th className="w-2/3 px-6 py-5 text-left text-sm font-semibold">
           O que inclui
         </th>
       </tr>
@@ -314,21 +315,48 @@ const detailedServices = [
             index % 2 === 0 ? "bg-white" : "bg-orange-50/40"
           }`}
         >
-          <td className="px-6 py-5 font-semibold text-slate-900">
-            <div className="flex items-center gap-3">
+          <td className="px-6 py-5 align-top font-semibold text-slate-900">
+            <div className="flex items-start gap-3">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-orange-500 text-sm font-bold text-white">
                 {index + 1}
               </span>
-              {item.service}
+              <span>{item.service}</span>
             </div>
           </td>
-          <td className="px-6 py-5 leading-7 text-slate-600">
+          <td className="px-6 py-5 align-top leading-7 text-slate-600">
             {item.includes}
           </td>
         </tr>
       ))}
     </tbody>
   </table>
+</div>
+
+{/* Cards mobile */}
+<div className="mt-10 grid gap-4 md:hidden">
+  {detailedServices.map((item, index) => (
+    <div
+      key={item.service}
+      className={`rounded-2xl border border-slate-200 p-5 shadow-sm ${
+        index % 2 === 0 ? "bg-white" : "bg-orange-50/40"
+      }`}
+    >
+      <div className="flex items-start gap-3">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-orange-500 text-sm font-bold text-white">
+          {index + 1}
+        </span>
+
+        <div>
+          <h3 className="font-semibold leading-6 text-slate-900">
+            {item.service}
+          </h3>
+          <p className="mt-3 text-sm leading-6 text-slate-600">
+            {item.includes}
+          </p>
+        </div>
+      </div>
+    </div>
+  ))}
 </div>
 <div className="mt-20">
   <h3 className="text-2xl font-semibold text-slate-900">
