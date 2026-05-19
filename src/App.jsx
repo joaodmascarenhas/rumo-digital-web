@@ -212,7 +212,7 @@ const detailedServices = [
                 href="#contactos"
                 className="rounded-2xl bg-orange-500 px-6 py-3 text-center text-sm font-semibold text-white shadow-sm transition hover:scale-[1.01]"
               >
-                Fale connosco
+                Fale conosco
               </a>
 
               <a
@@ -536,7 +536,7 @@ const detailedServices = [
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
               Se pretende melhorar a organização e o funcionamento do seu
-              negócio, fale connosco.
+              negócio, fale conosco.
               <br />
               <br />
               Se sente que o seu negócio podia funcionar melhor, vale a pena
