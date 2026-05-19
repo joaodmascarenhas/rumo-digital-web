@@ -1,9 +1,11 @@
 import logoFull from "./assets/rumo_digital_transparent_real.png";
 import logoIcon from "./assets/logo-icon.png";
+import { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function App() {
   const [state, handleSubmit] = useForm("mvzvvzaa");
+  const [menuOpen, setMenuOpen] = useState(false);
 
 const services = [
   {
@@ -148,45 +150,79 @@ const detailedServices = [
   return (
     <div className="min-h-screen bg-white text-slate-900">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/95 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <div className="flex items-center gap-3">
-            <img
-              src={logoIcon}
-              alt="Rumo Digital"
-              className="h-10 w-10 object-contain"
-            />
-            <div>
-              <p className="text-sm font-semibold tracking-wide text-white">
-                Rumo Digital
-              </p>
-              <p className="text-xs text-slate-400">
-                Organização e melhoria operacional
-              </p>
-            </div>
-          </div>
+  <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+    <div className="flex items-center gap-3">
+      <img
+        src={logoIcon}
+        alt="Rumo Digital"
+        className="h-10 w-10 object-contain"
+      />
+      <div>
+        <p className="text-sm font-semibold tracking-wide text-white">
+          Rumo Digital
+        </p>
+        <p className="text-xs text-slate-400">
+          Organização e melhoria operacional
+        </p>
+      </div>
+    </div>
 
-          <nav className="hidden gap-8 text-sm text-slate-300 md:flex">
-            <a href="#inicio" className="transition hover:text-white">
-              Início
-            </a>
-            <a href="#servicos" className="transition hover:text-white">
-              Serviços
-            </a>
-            <a href="#como-trabalhamos" className="transition hover:text-white">
-              Como Trabalhamos
-            </a>
-            <a href="#sobre-nos" className="transition hover:text-white">
-              Sobre nós
-            </a>
-            <a href="#perguntas-frequentes" className="transition hover:text-white">
-              Perguntas Frequentes
-            </a>
-            <a href="#contactos" className="transition hover:text-white">
-              Contactos
-            </a>
-          </nav>
-        </div>
-      </header>
+    <nav className="hidden gap-8 text-sm text-slate-300 md:flex">
+      <a href="#inicio" className="transition hover:text-white">
+        Início
+      </a>
+      <a href="#servicos" className="transition hover:text-white">
+        Serviços
+      </a>
+      <a href="#como-trabalhamos" className="transition hover:text-white">
+        Como Trabalhamos
+      </a>
+      <a href="#sobre-nos" className="transition hover:text-white">
+        Sobre nós
+      </a>
+      <a href="#perguntas-frequentes" className="transition hover:text-white">
+        Perguntas Frequentes
+      </a>
+      <a href="#contactos" className="transition hover:text-white">
+        Contactos
+      </a>
+    </nav>
+
+    <button
+      type="button"
+      onClick={() => setMenuOpen(!menuOpen)}
+      className="rounded-xl border border-white/15 px-3 py-2 text-2xl leading-none text-white md:hidden"
+      aria-label="Abrir menu"
+    >
+      ☰
+    </button>
+  </div>
+
+  {menuOpen && (
+    <nav className="border-t border-white/10 bg-slate-950 px-6 py-4 text-sm text-slate-300 md:hidden">
+      <div className="flex flex-col gap-4">
+        <a onClick={() => setMenuOpen(false)} href="#inicio">
+          Início
+        </a>
+        <a onClick={() => setMenuOpen(false)} href="#servicos">
+          Serviços
+        </a>
+        <a onClick={() => setMenuOpen(false)} href="#como-trabalhamos">
+          Como Trabalhamos
+        </a>
+        <a onClick={() => setMenuOpen(false)} href="#sobre-nos">
+          Sobre nós
+        </a>
+        <a onClick={() => setMenuOpen(false)} href="#perguntas-frequentes">
+          Perguntas Frequentes
+        </a>
+        <a onClick={() => setMenuOpen(false)} href="#contactos">
+          Contactos
+        </a>
+      </div>
+    </nav>
+  )}
+</header>
 
       <section id="inicio" className="scroll-mt-24 bg-slate-950 text-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
