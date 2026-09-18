@@ -1,6 +1,8 @@
 // Função serverless da Vercel (não faz parte do build do Vite).
+// Rota: POST /api/contact
 // Recebe o POST do formulário de contacto e envia o email via Resend.
 // Não guarda dados em lado nenhum — só reencaminha para o email da Rumo Digital.
+// Requer a variável de ambiente RESEND_API_KEY configurada na Vercel.
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
