@@ -1,10 +1,54 @@
 import logoFull from "./assets/rumo_digital_transparent_real.png";
 import logoIcon from "./assets/logo-icon.png";
 import { useState } from "react";
-import { useForm, ValidationError } from "@formspree/react";
 
 export default function App() {
-  const [state, handleSubmit] = useForm("mvzvvzaa");
+  const [state, setState] = useState({
+    submitting: false,
+    succeeded: false,
+    error: null,
+  });
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    const payload = {
+      nome: formData.get("nome"),
+      email: formData.get("email"),
+      mensagem: formData.get("mensagem"),
+    };
+
+    setState({ submitting: true, succeeded: false, error: null });
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        setState({
+          submitting: false,
+          succeeded: false,
+          error: data.error || "Não foi possível enviar. Tente novamente.",
+        });
+        return;
+      }
+
+      setState({ submitting: false, succeeded: true, error: null });
+      form.reset();
+    } catch {
+      setState({
+        submitting: false,
+        succeeded: false,
+        error: "Não foi possível enviar. Verifique a ligação e tente novamente.",
+      });
+    }
+  }
+
   const [menuOpen, setMenuOpen] = useState(false);
 
 const services = [
@@ -641,6 +685,7 @@ const detailedServices = [
                   <input
                     id="nome"
                     name="nome"
+                    required
                     className="w-full rounded-2xl border border-white/10 bg-slate-900/80 px-4 py-3 text-white outline-none placeholder:text-slate-500"
                     placeholder="O seu nome"
                   />
@@ -657,14 +702,9 @@ const detailedServices = [
                     id="email"
                     type="email"
                     name="email"
+                    required
                     className="w-full rounded-2xl border border-white/10 bg-slate-900/80 px-4 py-3 text-white outline-none placeholder:text-slate-500"
                     placeholder="nome@empresa.pt"
-                  />
-                  <ValidationError
-                    prefix="Email"
-                    field="email"
-                    errors={state.errors}
-                    className="mt-2 text-sm text-red-300"
                   />
                 </div>
 
@@ -679,16 +719,15 @@ const detailedServices = [
                     id="mensagem"
                     name="mensagem"
                     rows={5}
+                    required
                     className="w-full rounded-2xl border border-white/10 bg-slate-900/80 px-4 py-3 text-white outline-none placeholder:text-slate-500"
                     placeholder="Explique brevemente o que pretende melhorar"
                   />
-                  <ValidationError
-                    prefix="Mensagem"
-                    field="mensagem"
-                    errors={state.errors}
-                    className="mt-2 text-sm text-red-300"
-                  />
                 </div>
+
+                {state.error ? (
+                  <p className="text-sm text-red-300">{state.error}</p>
+                ) : null}
 
                 <button
                   type="submit"
