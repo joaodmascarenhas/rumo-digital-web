@@ -688,6 +688,29 @@ const detailedServices = [
                   Rumo Digital
                 </a>
               </div>
+
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p className="text-sm text-slate-400">Facebook</p>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61594722982724"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-2 flex items-center gap-3 text-lg font-medium text-white transition hover:text-orange-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    className="h-5 w-5"
+                  >
+                    <rect width="24" height="24" rx="4" fill="#1877F2" />
+                    <path
+                      fill="#fff"
+                      d="M15.4 12.9h-2.13v7.6h-3.14v-7.6H8.6v-2.67h1.53V8.53c0-1.51.72-3.87 3.87-3.87l2.84.01v2.59h-2.06c-.34 0-.81.17-.81.9v1.67h2.9l-.37 2.67z"
+                    />
+                  </svg>
+                  Rumo Digital
+                </a>
+              </div>
             </div>
           </div>
 
