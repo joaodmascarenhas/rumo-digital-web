@@ -34,6 +34,7 @@ export async function onRequest({ request, env }) {
     return json({ error: "Email inválido." }, 400);
   }
   if (!env.RESEND_API_KEY) {
+    console.error("contact: RESEND_API_KEY não configurada");
     return json({ error: "Erro de configuração do servidor. Tente novamente mais tarde." }, 500);
   }
 
@@ -53,10 +54,12 @@ export async function onRequest({ request, env }) {
       }),
     });
     if (!response.ok) {
+      console.error("contact: falha do Resend", { status: response.status });
       return json({ error: "Não foi possível enviar a mensagem. Tente novamente mais tarde." }, 502);
     }
     return json({ ok: true }, 200);
   } catch {
+    console.error("contact: falha de ligação ao Resend");
     return json({ error: "Erro inesperado. Tente novamente mais tarde." }, 500);
   }
 }

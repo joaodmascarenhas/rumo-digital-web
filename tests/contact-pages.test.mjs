@@ -12,6 +12,7 @@ function request(body = payload, method = 'POST') {
 }
 
 test('recusas não contactam o serviço de email', async t => {
+  t.mock.method(console, 'error', () => {});
   t.mock.method(globalThis, 'fetch', () => { throw new Error('Rede proibida neste teste'); });
   const cases = [
     [request(undefined, 'GET'), env, 405],
@@ -66,17 +67,25 @@ test('mantém os valores por defeito usados na Vercel', async t => {
 });
 
 test('recusa do Resend não produz sucesso nem expõe a resposta interna', async t => {
+  const errors = t.mock.method(console, 'error', () => {});
   t.mock.method(globalThis, 'fetch', async () => new Response('detalhe-interno-secreto', { status: 403 }));
   const response = await onRequest({ request: request(), env });
   assert.equal(response.status, 502);
   const body = await response.text();
   assert.ok(!body.includes('detalhe-interno-secreto'));
   assert.ok(!body.includes(env.RESEND_API_KEY));
+  assert.deepEqual(errors.mock.calls[0].arguments, ['contact: falha do Resend', { status: 403 }]);
+  const log = JSON.stringify(errors.mock.calls.map(call => call.arguments));
+  for (const sensitive of [env.RESEND_API_KEY, payload.email, payload.mensagem, 'detalhe-interno-secreto']) {
+    assert.ok(!log.includes(sensitive));
+  }
 });
 
 test('falha de ligação não produz sucesso', async t => {
+  const errors = t.mock.method(console, 'error', () => {});
   t.mock.method(globalThis, 'fetch', async () => { throw new Error('falha simulada'); });
   const response = await onRequest({ request: request(), env });
   assert.equal(response.status, 500);
   assert.ok((await response.json()).error);
+  assert.deepEqual(errors.mock.calls[0].arguments, ['contact: falha de ligação ao Resend']);
 });
